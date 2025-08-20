@@ -20,6 +20,14 @@ ol {
   padding: 5px;
   border: #a8a8a8;
 }
+.langButton:hover {
+  border: 5px #000;
+}
+.flag:hover,
+.flag:focus {
+  opacity: 1;
+  border: 2px #161d2a;
+}
 
 .wrapper {
   background: #ffffff;
