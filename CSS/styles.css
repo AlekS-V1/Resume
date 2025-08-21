@@ -36,6 +36,7 @@ ol {
   display: flex;
   flex-direction: column;
   max-width: 375px;
+  min-width: 320px;
   margin: 0 auto;
 }
 /* Main content */
@@ -52,7 +53,11 @@ ol {
   padding-top: 40px;
   padding-bottom: 40px;
   box-sizing: border-box;
-  width: 370px;
+  width: 100%;
+}
+
+.my-photo {
+  width: 100%;
 }
 
 .sidebar-content {
@@ -152,7 +157,7 @@ ol {
 /* My info */
 .my-name {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
   line-height: 122%;
   color: #000;
   margin-top: 0px;
@@ -288,5 +293,8 @@ ol {
     padding-top: 80px;
     padding-right: 40px;
     padding-bottom: 80px;
+  }
+  .my-name {
+    font-size: 45px;
   }
 }
