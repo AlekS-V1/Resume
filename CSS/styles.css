@@ -1,6 +1,6 @@
 body {
   background: #f6f6fa;
-  padding: 40px 40px 40px 40px;
+  padding: 5px 5px 5px 5px;
   font-family: "Montserrat", serif;
 }
 
@@ -10,9 +10,9 @@ ol {
   margin-bottom: 0px;
 }
 .header {
-  position: fixed;
-  top: 40px;
-  right: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .langButton {
@@ -34,16 +34,16 @@ ol {
 .wrapper {
   background: #ffffff;
   display: flex;
-  flex-direction: row-reverse;
-  width: 1200px;
+  flex-direction: column;
+  max-width: 375px;
   margin: 0 auto;
 }
 /* Main content */
 .main {
-  padding-left: 88px;
-  padding-top: 80px;
-  padding-right: 40px;
-  padding-bottom: 80px;
+  padding-left: 18px;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 8px;
   box-sizing: border-box;
 }
 /* Sidebar */
@@ -61,6 +61,7 @@ ol {
   padding-right: 40px;
   box-sizing: border-box;
 }
+
 /* Connacts */
 .contacts-title {
   font-weight: 700;
@@ -261,4 +262,31 @@ ol {
 }
 .education-conteiner {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  body {
+    padding: 40px 40px 40px 40px;
+  }
+  .header {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+  }
+  .wrapper {
+    max-width: 1200px;
+  }
+  .main {
+    padding-left: 88px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+  }
 }
